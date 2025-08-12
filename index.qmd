@@ -1,119 +1,129 @@
 ---
-title: "Introducción a Quarto"
-subtitle: "Crea hermosos y útiles articulos, paginas web, documentos, presentaciones, dashboards, entre otros"
-author: 
-    - name: "Andres Humberto Chirinos Lizondo"
-      affiliation: 
-        - "Carrera de Estadística - UMSA"
-        - "Sociedad Científica de Estudiantes de Estadística"
-      email: ahchirinos@umsa.bo
-      orcid: 0009-0004-1628-6135
-      corresponding: true
-      url: https://www.linkedin.com/in/andres-chirinos
-
-date: 2024-10-31
+title: "DataMesh Bolivia"
+subtitle: "Hacia un Ecosistema de Datos Colaborativo y Abierto"
+format: 
+  revealjs:
+    scrollable: true
 lang: es
-format:
-    revealjs: 
-        theme: dark
-        slide-number: true
-        incremental: true   
-        scrollable: true
-        multiplex: true
-        chalkboard:
-            buttons: true
-        preview-links: auto
-        logo: images/quarto.png
-        footer: Más información <https://quarto.org> | [Repositorio en GitHub](https://github.com/andres-chirinos/charla-31-quarto)
+theme: simple
+slide-number: true
+footer: "DataMesh Bolivia · 2025"
+keywords: Data Mesh, Open Data Ecosystems, FAIR Principles, Distributed Data Governance, Collaborative Data Infrastructure
+author: 
+  - name: "Andres Humberto Chirinos Lizondo"
+    affiliation: 
+      - "Carrera de Estadística - UMSA"
+      - "Sociedad Científica de Estudiantes de Estadística - UMSA"
+    email: ahchirinos@umsa.bo
+    orcid: 0009-0004-1628-6135
+    corresponding: true
+    url: https://www.linkedin.com/in/andres-chirinos
+date: 2025-08-12
 ---
 
-# ¿Qué es Quarto?
+## 1. ¿Qué es Tejido de Datos Bolivia?
 
-- Quarto es una plataforma de publicación **científica** y **técnica**.
-- Permite crear documentos **reproducibles** y **dinámicos**.
-- Soporta **múltiples formatos** de salida como HTML, PDF, Word, y presentaciones.
+- Ecosistema nacional de datos **abierto, útil y distribuido**.  
+- Inspirado en **Data Mesh**, **FAIR** y modelos globales como **OpenAlex**.  
+- Objetivo: gobernanza colaborativa y descentralizada de datos para investigación e innovación social.  
 
-## Como plataforma de publicación
+![](images/1.png)
 
-Nos provee de herramientas que nos ayudan al proceso de publicación, al estar orientada al área científica y técnica nos da la facilidad de usar tecnologias del entorno como ser
+---
 
-### Latex
-$$
-\int_{a}^{b} \frac{1}{b-a}
-$$
+## 2. ¿Por qué es necesario?
 
-### Python
-```python
-print("hello world")
-```
+* Infraestructura actual **fragmentada y poco interoperable**.
+* Falta acceso a datos **confiables y actualizados**.
+* Necesidad de **soberanía local** y control comunitario sobre los datos.
 
-### R
-```r
-print("hello world")
-```
+![](images/2.png)
 
-### Diagramas
-```{mermaid}
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-``` 
+---
 
-## Como método de dinamismo y replicabilidad
+## 3. Principios Clave
 
-Este nos ayuda a gestionar todo el proyecto en una misma ubicación y archivos, evitando la duplicidad y también haciendo más sencillo su replicabilidad completa.
+* **Descentralización:** dominios autónomos gestionan sus datos.
+* **Interoperabilidad:** datos que se entienden y combinan fácilmente.
+* **Reutilización:** datos disponibles para múltiples usos.
+* **Simplicidad:** interfaces y procesos claros para todos.
+* **Ciencia Abierta:** transparencia y ética en el acceso y uso.
 
-- **Manuscrito**: El documento principal que contiene el texto del artículo.
-- **Tablas**: Datos tabulados que complementan el manuscrito.
-- **Figuras**: Gráficos, diagramas y fotografías que ilustran los resultados.
-- **Datos Suplementarios**: Información adicional que respalda los hallazgos del estudio.
-- **Código Fuente**: Scripts y programas utilizados para el análisis de datos.
-- **Referencias**: Lista de trabajos citados en el manuscrito.
+![](images/3.png)
 
-## Como proveedor de formatos
-Ya que todo nuestro proyecto esta estandarizado y este cuenta con toda la información utilizada, este motor nos puede ayudar a exportar nuestro proyecto al formato que deseamos, incluso customizables (formatos para revistas, etc).
+---
 
-- PDF (Estandar o incluso el formato de Journey Asociation Statistics of America JASA)
-  - APA 7
-  - Hardvard
-- Word
-- HTML
-- Markdown
-- Latex (Typst)
-- Entre otros
+## 4. Inspiraciones y Marcos
 
-# ¿Qué se puede hacer con Quarto?
+* **Data Mesh:** gobernanza federada y datos como productos.
+* **FAIR:** datos localizables, accesibles y reutilizables.
+* **OCAP:** apertura, colaboración y autonomía.
+* Ejemplos globales: **OpenAlex, OurWorldInData, OpenStreetMap**.
 
-- Crear [informes]() técnicos y científicos.
-- Generar [documentos](https://sociest.org/ue-report/index.pdf) reproducibles con código embebido.
-- Desarrollar [presentaciones]() interactivas.
-- Publicar [libros]() y sitios web.
-- Entre otros
+![](images/4.png)
 
-[Galleria de Quarto](https://quarto.org/docs/gallery/)
+---
 
-# ¿Por qué nos sirve Quarto?
+## 5. Visión y Objetivos
 
-- Facilita la integración de texto, código y resultados.
-- Promueve la reproducibilidad y transparencia en la investigación.
-- Soporta múltiples lenguajes de programación como R, Python y Julia.
-- Permite la colaboración y el versionado de documentos atraves de git (github, gitlab, etc),etc.
+* Crear una **red pública y descentralizada** de datos confiables.
+* Promover **infraestructura compartida**: catálogos, APIs, documentación.
+* Facilitar herramientas para **estadística e IA** con datos accesibles.
+* Fomentar la gestión por **dominios autónomos**.
 
-# Vamos unos ejemplos 
+![](images/5.png)
 
-- [Analisis de unidades educativas en bolivia](https://sociest.org/ue-report/)
-- [Dashboard USDT/BOB](https://andres-chirinos.github.io/usdt-bob-dashboard/)
-- [Pagina Web SOCIEST](https://sociest.org)
-- [Esta Presentación]()
+---
 
-# Hagamos un ejercicio
+## 6. Arquitectura Esencial
 
-Creemos un manuscrito
+* **Dominios:** grupos autónomos que producen y mantienen sus datos.
+* **Data Hub Público:** conecta y facilita el acceso a los dominios.
+* **Interoperabilidad:** protocolos, metadatos y validación compartida.
 
-1. [Instalemos Quarto](https://quarto.org/docs/get-started/)
+![](images/6.png)
 
-2. Empecemos un proyecto
+---
 
-# Muchas Gracias
+## 7. Infraestructura Común
+
+| Componente         | Función                      |
+| ------------------ | ---------------------------- |
+| Catálogo Semántico | Búsqueda e indexación        |
+| Repositorio GitHub | Código, ETL y documentación  |
+| APIs RESTful       | Acceso programático estándar |
+| Validadores        | Calidad y esquemas de datos  |
+| Observabilidad     | Monitoreo y métricas         |
+
+---
+
+## 8. Estrategia de Lanzamiento
+
+1. Definir y diseñar los **primeros dominios**.
+2. Implementar la **infraestructura base**.
+3. Convocar a **colaboradores** de distintos sectores.
+4. Impulsar productos de datos **reutilizables y abiertos**.
+5. Integrar con redes y repositorios **externos**.
+
+![](images/7.png)
+
+---
+
+## 9. Casos de Uso Iniciales
+
+* Microdatos anonimizados para análisis estadísticos.
+* Observatorios ciudadanos: precios, salud, transporte.
+* API pública para análisis y visualización automática.
+
+![](images/8.png)
+
+---
+
+## 10. Conclusión y Llamado a la Acción
+
+> “Descentralizar sin desordenar, abrir sin improvisar, innovar sin excluir.”
+
+* Ética, sostenibilidad y colaboración para un país más informado.
+* Invitamos a estudiantes, investigadores, ONGs, funcionarios y empresas a sumarse.
+
+![](images/9.png)
